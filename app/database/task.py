@@ -36,7 +36,7 @@ def insert(task_data):
         task_data.get("description")
     )
     statement = """
-        INSERT INTO task (
+        INSERT INTO tasks (
             name,
             summary,
             description 
@@ -68,7 +68,7 @@ def update_by_id(task_data, task_id):
     conn.execute(statement, task_tuple)
     conn.commit()
 
-def delete_by_id(task_id):
+def delete_by_id(task_data, task_id):
     conn = get_db()
     conn.execute("DELETE FROM task WHERE id=?" (task_id, ))
     conn.commit()

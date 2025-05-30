@@ -18,7 +18,7 @@ def create_task(name, summary, description):
     
 
 if __name__ == "__main__":
-    print("Create a new task by filling out the prompt below: ")
+    print("Create a new task by filling out the prompts below: ")
     name = input("Task name: ")
     summary = input("Task summary: ")
     description = input("Task description: ")

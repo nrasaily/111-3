@@ -19,7 +19,7 @@ app = Flask(__name__)
 @app.get("/tasks")
 def get_all_task():
     out = {
-        "task": task.scan(),
+        "tasks": task.scan(),
         "ok": True
     }
     return out
